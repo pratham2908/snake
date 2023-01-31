@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/09bf6604f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="game"></div>
+    <div class="modal active">
+      <div class="start-game">
+        <h1>Welcome to Snake</h1>
+        <div class="choose-difficulty">
+          <h2>Choose Difficulty</h2>
+          <div class="difficulty">
+            <button>Easy</button>
+            <button>Medium</button>
+            <button>Hard</button>
+          </div>
+        </div>
+        <p>
+          Use the
+          <img src="arrow-keys-2.png" alt="arrow-keys" /> keys to move the snake
+        </p>
+        <button id="start-btn">Start Game</button>
+      </div>
+      <div id="game-over">
+        <h2>Game Over</h2>
+        <h4>Your Score was <span></span></h4>
+        <button onclick="window.location.reload()">Play Again</button>
+      </div>
+    </div>
+    <div class="score">
+      <h2>Score</h2>
+      <p id="score">0</p>
+    </div>
+    <audio id="eat" src="eat.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
